@@ -1,0 +1,67 @@
+1. AGILE
+    Agile este o metodologie de dezvoltare software in care proiectul se imparte in bucati functionale.
+Livrarea produsului (aplicatiei/software-ului) se face prin dezvoltarea iterativă și incrementală, în locul unei
+abordări tip cascade. Abordarea Agile se concentrează pe colaborarea strânsă între membrii echipei de dezvoltare, comunicare
+eficientă, livrare continuă de valoare și răspuns rapid la schimbări.
+
+2. SPRINT
+    Un sprint Agile reprezintă o unitate de timp fixă, în cadrul dezvoltării software Agile, în care echipa de dezvoltare
+lucrează pentru a realiza un set de activități și obiective stabilite în prealabil. Acesta se desfășoară în conformitate
+cu metodologia Scrum, care este una dintre cele mai populare abordări Agile.
+
+ETAPELE UNUI SPRINT:
+
+a) Planificarea sprintului:
+
+    -Echipa Scrum se întâlnește pentru a stabili obiectivele sprintului și a identifica lista de funcționalități sau
+    cerințe pe care le va aborda în timpul sprintului.
+    -Durata sprintului este stabilită în avans (de exemplu, 2 săptămâni).
+    -Se identifică și se estimează sarcinile necesare pentru îndeplinirea obiectivelor sprintului.
+
+b) Daily Scrum:
+
+    -În fiecare zi lucrătoare în timpul sprintului, echipa se întâlnește într-o reuniune scurtă, numită Daily Scrum sau Stand-up meeting.
+    -Fiecare membru al echipei raportează ce a realizat în ziua precedentă, ce va realiza în ziua respectivă și dacă are vreo problemă sau obstacol.
+    -Scopul acestei întâlniri este de a menține o comunicare strânsă și de a identifica rapid orice impedimente care pot afecta progresul.
+
+c) Dezvoltarea:
+
+    -Echipa lucrează în mod colaborativ la sarcinile planificate pentru sprint.
+    -Echipa își organizează activitățile zilnice și lucrează pentru a atinge obiectivele stabilite.
+    -În timpul sprintului, pot apărea modificări sau ajustări ale cerințelor. Acestea sunt gestionate prin intermediul
+    Product Backlog și pot fi luate în considerare pentru sprintul următor.
+
+d) Revizuirea sprintului (sau Demo):
+
+    -La sfârșitul sprintului, echipa Scrum prezintă rezultatele obținute clienților sau persoanelor interesate.
+    -Demonstrațiile funcționalităților realizate și feedback-ul colectat ajută la validarea progresului și la
+    identificarea punctelor de ajustare sau îmbunătățire.
+
+e) Retrospectiva sprintului:
+
+    -După revizuirea sprintului, echipa Scrum se întâlnește pentru o retrospectivă.
+    -Scopul este de a evalua modul în care a decurs sprintul, de a identifica ce a funcționat bine și ce poate fi îmbunătățit.
+    -Echipa ia decizii asupra modului în care poate îmbunătăți procesul în viitoarele sprinturi.
+
+După încheierea sprintului, urmează planificarea și demararea unui nou sprint, continuând ciclul până când produsul
+sau proiectul este finalizat sau până când se decide să se opreasca.
+
+3. EPIC
+    Epic este o funcționalitate mare sau un set de funcționalități care nu pot fi livrate într-un singur sprint și care
+trebuie să fie divizate în povești mai mici. Epic-urile sunt deseori folosite pentru a descrie cerințe de nivel înalt
+ale clienților sau utilizatorilor.
+
+4. USER STORY
+    User story este o descriere scurtă și simplă a unei caracteristici sau funcționalități de care are nevoie un utilizator
+sau client. Aceasta este scrisă din perspectiva utilizatorului și trebuie să fie scrisă într-un limbaj simplu, astfel
+încât toți membrii echipei de dezvoltare să înțeleagă cerințele.
+
+5. ACCEPTANCE CRITERIA (sau DOD - Definition of done)
+    Acceptance criteria sunt criteriile care trebuie îndeplinite pentru ca o funcționalitate să fie considerată completă
+și testabilă. Acestea sunt definite de obicei în prealabil, înainte ca echipa de dezvoltare să înceapă să lucreze la o
+anumită funcționalitate și pot include condiții de acceptare, cerințe de performanță, limitări de timp sau alte cerințe
+specifice ale utilizatorilor sau clientului. Aceste criterii sunt folosite pentru a confirma că funcționalitatea este
+completă și că respectă cerințele specifice ale utilizatorului sau clientului.
+
+
+

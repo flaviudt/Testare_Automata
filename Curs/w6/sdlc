@@ -1,0 +1,45 @@
+SDLC (Software Development Life Cycle) este un proces folosit în dezvoltarea software-ului și include următoarele
+etape principale:
+
+1.Cerințe și analiză:
+
+-Se colectează și se analizează cerințele clienților sau utilizatorilor finali.
+-Se identifică obiectivele, funcționalitățile și constrângerile sistemului software.
+-Se realizează o analiză detaliată a cerințelor și se elaborează documentația necesară.
+
+2.Proiectare:
+
+-Se elaborează o arhitectură și o proiectare detaliată a sistemului software.
+-Se determină componentele, interacțiunile și fluxurile de date ale sistemului.
+-Se ia în considerare scalabilitatea, securitatea și performanța sistemului.
+
+3.Dezvoltare:
+
+-Se scrie și se testează codul sursă al sistemului software.
+-Se implementează funcționalitățile și modulele conform proiectării.
+-Se utilizează tehnologii și limbaje de programare specifice proiectului.
+
+4.Testare:
+
+-Se efectuează teste pentru a verifica și valida funcționalitatea sistemului software.
+-Se utilizează tehnici de testare automate și manuale pentru a identifica erori și defecțiuni.
+-Se asigură calitatea sistemului prin testarea unitară, de integrare și de sistem.
+
+5.Implementare și integrare:
+
+-Sistemul software este instalat și configurat în mediul de producție sau în mediul în care va fi utilizat.
+-Se integrează cu alte sisteme sau module existente.
+-Se realizează verificări și teste finale pentru a confirma că sistemul funcționează corect în mediul live.
+
+6.Operare și întreținere:
+
+-Sistemul software este utilizat de către utilizatori finali sau clienți.
+-Se oferă asistență și suport tehnic pentru a rezolva problemele sau erorile întâlnite.
+-Se efectuează întreținerea și actualizările necesare pentru a asigura funcționalitatea și securitatea sistemului.
+
+7.Închidere sau retragere:
+
+-Sistemul software este închis sau retragerea acestuia este planificată, dacă este cazul.
+-Se realizează activități de închidere, cum ar fi documentarea finală, arhivarea codului sursă și evaluarea performanței proiectului.
+
+Aceste etape sunt prezente într-un model tradițional de dezvoltare software precum Waterfall. În abordările Agile, cum ar fi Scrum sau Kanban, etapele sunt adesea mai flexibile și interacțiunile dintre ele sunt mai dinamice, fiind în centrul dezvoltării incrementale și iterative a produsului.

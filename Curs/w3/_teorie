@@ -1,0 +1,125 @@
+1. BDD
+    Behaviour Driven Development (BDD) este o metodă de dezvoltare software care se concentrează pe definirea
+comportamentului dorit al unei aplicații înainte de a începe să se scrie codul. În BDD, aceste comportamente sunt
+definite printr-un limbaj comun, ușor de înțeles, care poate fi folosit atât de dezvoltatori, cât și de persoanele din
+afara echipei de dezvoltare.
+
+    BDD se concentrează pe crearea unor specificații de comportament (sau scenarii) care descriu modul în care aplicația
+ar trebui să se comporte într-o varietate de situații diferite. Aceste specificații sunt utilizate pentru a defini
+cerințele aplicației și pentru a asigura că dezvoltarea este orientată spre nevoile utilizatorilor.
+
+    BDD este adesea asociat cu unelte speciale de testare, cum ar fi Cucumber sau SpecFlow, care permit scrierea
+specificațiilor de comportament într-un format ușor de înțeles și ușor de folosit de către non-tehnicieni.
+
+2. TDD
+    Test Driven Development (TDD) este o metodă de dezvoltare software care constă în scrierea testelor automate înaintea
+codului efectiv.
+
+    În TDD, programatorul începe prin a scrie un test pentru funcționalitatea pe care intenționează să o adauge sau să o
+modifice. Testul va eșua inițial, deoarece funcționalitatea încă nu a fost implementată. Apoi, programatorul va scrie
+codul necesar pentru a face testul să treacă.
+
+    În acest fel, TDD asigură faptul că fiecare porțiune de cod este testată automat și că aceste teste sunt scrise
+înaintea codului. Acest lucru poate ajuta la prevenirea erorilor și la creșterea acoperirii testelor pentru o aplicație.
+
+3. FEATURE
+    Un feature este o funcționalitate specifică a unui produs software sau a unei aplicații. Aceasta poate fi o caracteristică
+sau o opțiune care oferă o anumită funcționalitate sau o facilitate utilizatorului. Features-urile pot varia de la cele
+mai simple, cum ar fi afișarea unei imagini sau a unui text, până la cele mai complexe, cum ar fi interacțiunea cu un
+sistem de bază de date sau generarea de rapoarte complexe. Features-urile pot fi de asemenea grupate în funcționalități
+mai mari, cum ar fi module sau pachete de software, și pot fi dezvoltate și livrate în mod iterativ, împreună cu alte
+funcționalități, în cadrul unui proces de dezvoltare software Agile.
+
+4. SCENARIO
+    Un scenariu (sau scenario) este o descriere detaliată a unei situații sau a unui flux de lucru, de obicei,
+folosit pentru a testa sau pentru a valida un produs software. Un scenariu poate fi utilizat pentru a demonstra cum un
+utilizator va interacționa cu o aplicație sau cu o funcționalitate specifică într-un anumit context, fie că este vorba
+despre navigarea prin diferite ecrane ale unei aplicații sau completarea unui formular.
+
+    Un scenariu poate fi scris sub forma unei liste de acțiuni pe care utilizatorul trebuie să le efectueze sau sub forma
+unui scenariu mai detaliat care include informații suplimentare despre utilizatorul și despre mediul în care
+interacționează cu aplicația. Scenariile sunt utilizate adesea în procesul de testare a software-ului pentru a verifica
+că acesta funcționează așa cum a fost proiectat și că îndeplinește cerințele specifice ale utilizatorului.
+Scenariile sunt, de asemenea, utilizate în procesul de proiectare și dezvoltare a produselor software pentru a asigura
+că acestea sunt construite cu nevoile utilizatorilor în minte.
+
+5. EXEMPLU DE SCENARIU BDD
+    Un exemplu de scenariu de BDD pentru o aplicație de e-commerce ar fi:
+
+
+            Feature: Coșul de cumpărături
+
+            Scenariu: Adăugarea unui produs în coș
+
+                Date de intrare:
+                    Utilizatorul navighează pe site-ul de e-commerce
+                    Utilizatorul selectează un produs pe care dorește să îl adauge în coș
+
+                Comportament așteptat:
+                    Produsul selectat este adăugat cu succes în coș
+                    Utilizatorul primește o notificare că produsul a fost adăugat cu succes în coș
+
+                Rezultat așteptat:
+                    Produsul selectat este afișat în coșul utilizatorului
+                    Utilizatorul poate continua cumpărăturile sau poate finaliza comanda
+
+
+
+Acest scenariu descrie comportamentul dorit al aplicației în momentul adăugării unui produs în coș și poate fi utilizat
+ca bază pentru dezvoltarea și testarea aplicației.
+
+
+6. GHERKIN
+    Gherkin este un limbaj de nivel înalt, ușor de citit și de înțeles, utilizat în Behavior Driven Development (BDD) și
+Test Driven Development (TDD) pentru a descrie comportamentul dorit al unei aplicații. Gherkin utilizează o sintaxă
+simplă și structurată, bazată pe cuvinte cheie, pentru a descrie comportamentul dorit al aplicației într-un format ușor
+de înțeles atât pentru dezvoltatori, cât și pentru non-tehnicieni.
+
+    Sintaxa Gherkin include cuvinte cheie precum "Feature", "Scenario", "Given", "When" și "Then", care sunt folosite pentru
+a descrie diferitele părți ale specificațiilor de comportament. De exemplu, "Feature" este folosit pentru a defini o
+caracteristică a aplicației, "Scenario" este folosit pentru a descrie un scenariu specific de utilizare, "Given" este
+folosit pentru a descrie condițiile inițiale ale scenariului, "When" este folosit pentru a descrie acțiunea care
+declanșează scenariul, iar "Then" este folosit pentru a descrie comportamentul așteptat în urma acțiunii.
+
+    Gherkin este adesea folosit în combinație cu unelte speciale de testare, cum ar fi Cucumber sau SpecFlow, care permit
+transformarea scenariilor Gherkin în teste automate. Aceste unelte pot fi utilizate pentru a verifica automat
+comportamentul aplicației în funcție de specificațiile de comportament definite în Gherkin.
+
+
+6. EXEMPLE DE SCENARII BDD CU SINTAXA GHERKIN
+
+        Feature: Coșul de cumpărături
+
+        @smoke
+        Scenario: Adăugare unui produs in coș
+            Given Utilizatorul se află pe pagina cu produse
+            And Utilizatorul selecteaza un produs pe care dorește sa îl adauge în coș
+            When Utilizatorul apasa butonul "Adauga in cos"
+            Then Produsul selectat este adăugat cu succes in cos
+            And Utilizatorul primeste o notificare ca produsul a fost adăugat cu succes în coș
+
+        @regression
+        Scenario: Continuarea cumpărăturilor
+            Given Utilizatorul are un produs în coș
+            When Utilizatorul apasă butonul "Continuă cumpărături"
+            Then Utilizatorul este redirecționat pe pagina cu produse
+
+        @smoke
+        Scenario: Finalizarea comenzii
+            Given Utilizatorul are un produs în coș
+            When Utilizatorul apasă butonul "Finalizare comanda"
+            Then Utilizatorul este redirecționat pe pagina de finalizare a comenzii
+
+
+Vom instala plugin-urile ini si gherkin pentru a ne ușura munca
+File -> Settings -> Plugins -> Marketplace: cautam ini, apoi gherkin si le instalam
+
+Vom instala package-urile behave si behave-html-formatter
+    pip install behave
+    pip install behave-html-formatter
+
+
+Exemple de comenzi pentru a rula teste cu tag-uri:
+    behave --tags=smoke
+    behave -f html -o behave-report.html --tags=smoke
+    behave --tags=smoke,regression       ATENTIE [FARA SPATIU INTRE TAG-URI IN ACEST CAZ!]

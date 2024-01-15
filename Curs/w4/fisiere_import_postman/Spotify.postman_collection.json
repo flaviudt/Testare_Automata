@@ -1,0 +1,408 @@
+{
+	"info": {
+		"_postman_id": "8fca9600-4b91-4535-b83a-c62e76917311",
+		"name": "Spotify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19603487"
+	},
+	"item": [
+		{
+			"name": "Album",
+			"item": [
+				{
+					"name": "Get album",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "BQC9tLomAKZ9YeJawSIMlNzTxHFptBFdImACb2TGGL_QSeut1lsrjJFNalkV4ljLQ14DVRhZGCqjz7ZBc_3FSHa0sCj3Xd-VZMQvS0o5CZEpIAHXGpQcQW4psSXZ_ZfyctV_Y0t_s95Lw2Wz6Wtztn622FnBhgtSbRRwaTVRMA-2zahNVtNejG-0WULfy5M4EultxMtfLMiHzGXev7_96rtfd9dPIxFUxIEDYYs_Y8la3hAYa2l5fAh7z4mlN11YFEf3rqfGioeqLDDySI48BU9GtaHdcH_-fkFuDiZgpTq1-rpG1wqwLDZSAEHn6ee78gDD7lA19LfwHkbSuD-p",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/albums/2ANVost0y2y52ema1E9xAZ",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"albums",
+								"2ANVost0y2y52ema1E9xAZ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get new releases",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/browse/new-releases?country=RO&offset=0&limit=20",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"browse",
+								"new-releases"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "RO"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Artist",
+			"item": [
+				{
+					"name": "Get Artist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "BQC9tLomAKZ9YeJawSIMlNzTxHFptBFdImACb2TGGL_QSeut1lsrjJFNalkV4ljLQ14DVRhZGCqjz7ZBc_3FSHa0sCj3Xd-VZMQvS0o5CZEpIAHXGpQcQW4psSXZ_ZfyctV_Y0t_s95Lw2Wz6Wtztn622FnBhgtSbRRwaTVRMA-2zahNVtNejG-0WULfy5M4EultxMtfLMiHzGXev7_96rtfd9dPIxFUxIEDYYs_Y8la3hAYa2l5fAh7z4mlN11YFEf3rqfGioeqLDDySI48BU9GtaHdcH_-fkFuDiZgpTq1-rpG1wqwLDZSAEHn6ee78gDD7lA19LfwHkbSuD-p",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/artists/3fMbdgg4jU18AjLCKBhRSm",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"artists",
+								"3fMbdgg4jU18AjLCKBhRSm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Genres",
+			"item": [
+				{
+					"name": "Get genres",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/recommendations/available-genre-seeds",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"recommendations",
+								"available-genre-seeds"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Player",
+			"item": [
+				{
+					"name": "Get current player state",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "BQC9tLomAKZ9YeJawSIMlNzTxHFptBFdImACb2TGGL_QSeut1lsrjJFNalkV4ljLQ14DVRhZGCqjz7ZBc_3FSHa0sCj3Xd-VZMQvS0o5CZEpIAHXGpQcQW4psSXZ_ZfyctV_Y0t_s95Lw2Wz6Wtztn622FnBhgtSbRRwaTVRMA-2zahNVtNejG-0WULfy5M4EultxMtfLMiHzGXev7_96rtfd9dPIxFUxIEDYYs_Y8la3hAYa2l5fAh7z4mlN11YFEf3rqfGioeqLDDySI48BU9GtaHdcH_-fkFuDiZgpTq1-rpG1wqwLDZSAEHn6ee78gDD7lA19LfwHkbSuD-p",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/me/player",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"me",
+								"player"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get available devices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/me/player/devices",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"me",
+								"player",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get currently playing track",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/me/player/currently-playing",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"me",
+								"player",
+								"currently-playing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Resume/Start currently playing track",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/me/player/play",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"me",
+								"player",
+								"play"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pause",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "BQC9tLomAKZ9YeJawSIMlNzTxHFptBFdImACb2TGGL_QSeut1lsrjJFNalkV4ljLQ14DVRhZGCqjz7ZBc_3FSHa0sCj3Xd-VZMQvS0o5CZEpIAHXGpQcQW4psSXZ_ZfyctV_Y0t_s95Lw2Wz6Wtztn622FnBhgtSbRRwaTVRMA-2zahNVtNejG-0WULfy5M4EultxMtfLMiHzGXev7_96rtfd9dPIxFUxIEDYYs_Y8la3hAYa2l5fAh7z4mlN11YFEf3rqfGioeqLDDySI48BU9GtaHdcH_-fkFuDiZgpTq1-rpG1wqwLDZSAEHn6ee78gDD7lA19LfwHkbSuD-p",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/me/player/pause",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"me",
+								"player",
+								"pause"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Skip to next",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/me/player/next",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"me",
+								"player",
+								"next"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Playback Volume",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/me/player/volume?volume_percent=0",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"me",
+								"player",
+								"volume"
+							],
+							"query": [
+								{
+									"key": "volume_percent",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apiUrl}}/search?q=beatles&type=album",
+							"host": [
+								"{{apiUrl}}"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "beatles"
+								},
+								{
+									"key": "type",
+									"value": "album"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "redirect_uri",
+				"value": "http://testitfactorypyta1",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://accounts.spotify.com/api/token",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{client_secret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{client_id}}",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "ugc-image-upload user-read-playback-state user-modify-playback-state user-read-currently-playing app-remote-control streaming playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-follow-modify user-follow-read user-read-playback-position user-top-read user-read-recently-played user-library-modify user-library-read user-read-email user-read-private",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://accounts.spotify.com/authorize",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "authorization_code",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "client_id",
+			"value": "8db23dc7df104f939e925238c7aecf95",
+			"type": "string"
+		},
+		{
+			"key": "client_secret",
+			"value": "7c19ad77adb845d3ad657334a2691548",
+			"type": "string"
+		},
+		{
+			"key": "apiUrl",
+			"value": "https://api.spotify.com/v1",
+			"type": "string"
+		}
+	]
+}

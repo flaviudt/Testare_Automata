@@ -1,0 +1,40 @@
+STLC (Software Testing Life Cycle) reprezintă ciclul de viață al testării software și cuprinde următoarele etape:
+
+1.Planificare testare:
+
+-Se definește obiectivul și scopul testării.
+-Se identifică cerințele, riscurile și resursele necesare pentru testare.
+-Se stabilesc strategii și planuri de testare, inclusiv identificarea scenariilor de testare și priorităților.
+
+2.Analiză și design testare:
+
+-Se analizează cerințele și specificațiile pentru a identifica caracteristicile și funcționalitățile care trebuie testate.
+-Se definesc scenariile de testare, se creează planuri de testare detaliate și se stabilesc criterii de acceptare.
+-Se dezvoltă strategii de testare, inclusiv selecția tehnicilor de testare adecvate.
+
+3.Implementare testare:
+
+-Se creează și se configurează mediile de testare necesare.
+-Se pregătesc datele de testare și se identifică cazurile de testare.
+-Se scriu și se implementează scripturile de testare automate și manuale.
+
+4.Execuție și înregistrare:
+
+-Se rulează cazurile de testare planificate și se monitorizează rezultatele.
+-Se înregistrează și se gestionează defecțiunile descoperite.
+-Se colectează date și se generează rapoarte de testare pentru a evalua acoperirea și calitatea testelor efectuate.
+
+5.Evaluare și raportare:
+
+-Se evaluează rezultatele testelor în funcție de criteriile de acceptare stabilite.
+-Se identifică defecțiunile și se prioritizează pentru a fi remediate.
+-Se generează rapoarte de testare care includ rezultatele, defecțiunile identificate, acoperirea testelor și recomandări pentru îmbunătățiri.
+
+6.Închidere testare:
+
+-Se finalizează activitățile de testare și se asigură că toate defecțiunile identificate sunt rezolvate.
+-Se revizuiesc rapoartele de testare și se realizează o evaluare finală a calității și acoperirii testelor.
+-Se pregătește documentația finală a testării și se finalizează ciclul de testare.
+
+Etapele STLC pot varia în funcție de organizatie și de proiectul specific, iar procesele
+de testare pot fi personalizate pentru a se potrivi nevoilor și cerințelor individuale.
